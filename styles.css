@@ -1,5 +1,6 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
 
 h1 {
@@ -7,6 +8,14 @@ h1 {
     background-color: orange;
     text-align: center;
     font-weight: 800;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 ul {
@@ -26,4 +35,5 @@ ul li::before {
     color: grey;
     text-decoration: none;
     font-weight: 700;
+    font-size: 18px;
 }
