@@ -72,16 +72,17 @@ h1 {
     margin-bottom: 16px;
 }
 
-.home-button {
-    background-color: orange;
-    padding: 6px 24px;
+.home-button,
+.recipes button {
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.home-button a {
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
+.home-button {
+    font-size: 14px;
+    padding: 8px 16px;
 }
 
 .recipes {
@@ -89,22 +90,19 @@ h1 {
 }
 
 .recipes button {
-    background-color: white;
-    border: 1px solid black;
     padding: 12px 24px;
-    cursor: pointer;
-    display: block;
-    font-weight: bold;
     font-size: 18px;
     width: 75%;
-    margin: 0px auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .recipes button:not(:last-child) {
     border-bottom: none;
 }
 
-.recipes button:hover {
+.recipes button:hover,
+.home-button:hover {
     background-color: orange;
     color: white;
 }
