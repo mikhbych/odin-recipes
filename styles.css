@@ -12,38 +12,21 @@ h1 {
     margin-top: 0;
 }
 
-h2 {
+.page-container {
+    height: auto;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.page-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-container h2 {
     text-align: center;
     font-size: 30px;
-}
-
-ul {
-    list-style: none;
-}
-
-ul li::before {
-    content: "\2022";
-    color: orange;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
-.recipe,
-.home-button a {
-    color: black;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.home-button a {
-    color: white;
-}
-
-.home-button {
-    background-color: orange;
 }
 
 .section {
@@ -62,32 +45,66 @@ ul li::before {
     padding: 0px 8px;
 }
 
-li {
+.section ul {
+    list-style: none;
+}
+
+.section ul li::before {
+    content: "\2022";
+    color: orange;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.section li {
     padding-left: 6px;
 }
 
-ul li {
+.section ul li {
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
-ol li {
+.section ol li {
     margin-top: 16px;
     margin-bottom: 16px;
 }
 
-.page-container {
-    height: auto;
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.page-container img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .home-button {
+    background-color: orange;
     padding: 6px 24px;
+}
+
+.home-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.recipes {
+    margin-top: 24px;
+}
+
+.recipes button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 12px 24px;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    width: 75%;
+    margin: 0px auto;
+}
+
+.recipes button:not(:last-child) {
+    border-bottom: none;
+}
+
+.recipes button:hover {
+    background-color: orange;
+    color: white;
 }
